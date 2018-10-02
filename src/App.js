@@ -58,13 +58,13 @@ class App extends Component {
         </header>
         <div className='search-section ml-2 mr-2'>
           <div className='form-group ml-5 mr-5'>
-            <input name='search' className='form-control-text form-control-lg' type='text' onKeyDown={this.checkForSubmit} onChange={this.handleChange}/>
+            <input name='search' placeholder='Enter a word to define...' className='form-control-text form-control-lg' type='text' onKeyDown={this.checkForSubmit} onChange={this.handleChange}/>
           </div>
           <div className='row m-5'>
-            <div className='col-6'>
+            <div className='col-sm-6 mb-3'>
               <Dictionary result={this.state.dictionary}/>
             </div>
-            <div className='col-6'>
+            <div className='col-sm-6 mb-3'>
               <Slang result={this.state.slang}/>
             </div>
           </div>
